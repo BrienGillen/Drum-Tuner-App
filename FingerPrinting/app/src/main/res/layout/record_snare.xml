@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/drummersmall"
+    tools:context="com.example.briengillen.fingerprinting.MainActivity">
+
+    <Button
+        android:id="@+id/recStart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Start Recording"
+        tools:layout_editor_absoluteX="118dp"
+        tools:layout_editor_absoluteY="116dp"
+        android:layout_marginTop="94dp"
+        android:background="@drawable/mybutton"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:textColor="#ffffff"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:id="@+id/recStop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Stop Recording"
+        tools:layout_editor_absoluteX="122dp"
+        tools:layout_editor_absoluteY="219dp"
+        android:layout_marginTop="69dp"
+        android:layout_below="@+id/recStart"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/mybutton"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:textColor="#ffffff"/>
+
+    <TextView
+        android:id="@+id/recText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="104dp"
+        android:background="@drawable/mybutton"
+        android:cursorVisible="false"
+        android:textColor="#ffffff"
+        android:textSize="15sp"
+        android:textAlignment="center"/>
+
+    <Button
+        android:id="@+id/recordH"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:background="@drawable/mybutton"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:text="Home"
+        android:textColor="@android:color/background_light"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true" />
+
+    <Button
+        android:id="@+id/recCont"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignTop="@+id/recordH"
+        android:text="Continue"
+        android:textColor="@android:color/background_light"
+        android:background="@drawable/mybutton" />
+
+    <ImageView
+        android:id="@+id/stopImage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="39dp"
+        android:background="@drawable/stop"
+        android:layout_above="@+id/recText"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:id="@+id/recWarning"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="(Max recording time is 5 seconds)"
+        android:background="@drawable/mybutton"
+        android:textSize="12sp"
+        android:textColor="@android:color/background_light"
+        android:layout_below="@+id/recStart"
+        android:layout_centerHorizontal="true" />
+
+</RelativeLayout>

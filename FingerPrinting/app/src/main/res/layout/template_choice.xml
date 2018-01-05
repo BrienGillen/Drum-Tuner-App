@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/drummersmall">
+
+    <Button
+        android:id="@+id/record"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="67dp"
+        android:layout_weight="1"
+        android:background="@drawable/mybutton"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:text="Record New Template"
+        android:textColor="@android:color/background_light"
+        android:textStyle="bold"
+        android:layout_below="@+id/textView4"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:id="@+id/temp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="74dp"
+        android:background="@drawable/mybutton"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:text="Use Previous Template"
+        android:textColor="@android:color/background_light"
+        android:textStyle="bold"
+        android:layout_below="@+id/record"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/mybutton"
+        android:text="Would you like to use an old template or make a new one?"
+        android:textAlignment="center"
+        android:textColor="@android:color/background_light"
+        android:textSize="26sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/tempChoiceH"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:background="@drawable/mybutton"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:text="Home"
+        android:textColor="@android:color/background_light"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true" />
+
+
+</RelativeLayout>

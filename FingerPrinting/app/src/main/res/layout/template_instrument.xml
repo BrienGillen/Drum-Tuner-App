@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimaryDark">
+
+    <Button
+        android:id="@+id/snareTemp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/mybutton"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:text="Snare Drum"
+        android:textColor="@android:color/background_light"
+        android:layout_below="@+id/tempChoose"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="11dp" />
+
+    <Button
+        android:id="@+id/tomTemp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/snareTemp"
+        android:layout_marginTop="66dp"
+        android:background="@drawable/mybutton"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:text="Rack Tom"
+        android:textColor="@android:color/background_light" />
+
+    <Button
+        android:id="@+id/floorTemp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/tomTemp"
+        android:layout_marginTop="63dp"
+        android:background="@drawable/mybutton"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:text="Floor Tom"
+        android:textColor="@android:color/background_light" />
+
+    <Button
+        android:id="@+id/kickTemp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/floorTemp"
+        android:layout_marginTop="66dp"
+        android:background="@drawable/mybutton"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:text="Kick Drum"
+        android:textColor="@android:color/background_light" />
+
+    <TextView
+        android:id="@+id/tempChoose"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/mybutton"
+        android:text="Please select your drum"
+        android:textAlignment="center"
+        android:textColor="@android:color/background_light"
+        android:textSize="26sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/homeTempI"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:background="@drawable/mybutton"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:text="Home"
+        android:textColor="@android:color/background_light"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true" />
+
+    <ImageButton
+        android:id="@+id/snareButton"
+        android:layout_width="match_parent"
+        android:layout_height="62dp"
+        app:srcCompat="@drawable/snare1"
+        android:layout_below="@+id/snareTemp"
+        android:layout_alignParentStart="true" />
+
+    <ImageButton
+        android:id="@+id/rackButton"
+        android:layout_width="match_parent"
+        android:layout_height="59dp"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/tomTemp"
+        app:srcCompat="@drawable/racktom1" />
+
+    <ImageButton
+        android:id="@+id/floorButton"
+        android:layout_width="match_parent"
+        android:layout_height="62dp"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/floorTemp"
+        app:srcCompat="@drawable/floor1" />
+
+    <ImageButton
+        android:id="@+id/kickButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/kickTemp"
+        app:srcCompat="@drawable/kick1"
+        android:layout_toStartOf="@+id/homeTempI" />
+</RelativeLayout>
